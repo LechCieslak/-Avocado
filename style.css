@@ -1,3 +1,38 @@
 html, body {
     background-color: #ffd226;
 }
+
+.top {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
+
+.bottom {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 250px);
+    animation: spin 20s linear infinite;
+}
+
+.top:hover {
+    animation: spinAvo 20s linear infinite;
+}
+
+.top:active {
+    animation: spinAvo 10s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg);}
+}
+
+@keyframes spinAvo {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg);}
+}
