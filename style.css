@@ -19,6 +19,22 @@ html, body {
     animation: spin 20s linear infinite;
 }
 
+.btn {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: #ffd226;
+    animation: btn 2s;
+}
+
+.btn:active {
+    background-color: lime;
+}
+
 .top:hover {
     animation: spinAvo 20s linear infinite;
 }
@@ -35,4 +51,13 @@ html, body {
 @keyframes spinAvo {
     from { transform: rotate(360deg); }
     to { transform: rotate(0deg);}
+}
+
+@keyframes btn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
 }
